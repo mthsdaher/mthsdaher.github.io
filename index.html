@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Personal Web Page</title> <!-- html.5 -->
+</head>
+
+<!-- navigation bar-->
+<body> 
+    <nav>
+        <ul> <!-- unordered list -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contacts</a></li>
+        </ul>
+    </nav>
+        <!-- ABOUT ME -->
+        <div class ="titles">
+        <h2> <a href="https://www.freecodecamp.org/news/front-end-developer-what-is-front-end-development-explained-in-plain-english/"> Front-End Developer </a> </h2> <!-- Link to a external website using <a> tag-->
+        <h3>Hi, I'm Matheus Daher. A junior Front-end developer, based in Toronto - Canada.></h3>
+        </div>
+        <!-- MY PROJECTS -->
+    <div><!-- instead of section, the W3C recommeded using the <div> tag-->
+        <article>
+        <h3>Projects</h3>
+        <h5>Each project is a unique pice of development</h5> 
+        <h6>Here are some of my projects</h6>
+
+            <figure> <!-- mark up the portfolios photos in this document -->
+                <img class ="list-images" src="assets/css.png" alt="Logo Canadian Street Store">
+                <figcaption>Canadian Street Store</figcaption> <!-- subtitle-->
+            </figure>
+
+            <figure>
+                <img class ="list-images" src="assets/roll.jpg" alt="Logo roll up">
+                <figcaption>Roll up</figcaption> <!-- subtitle-->
+            </figure>
+
+            <figure>
+                <img class ="list-images" src="assets/inventory.jfif" alt="Logo Inventory Controll">
+                <figcaption> Inventory Controll</figcaption> <!-- subtitle-->
+            </figure>
+        </article>
+    </div>
+
+    <section class="contact-form">
+        <h4>Contact Form</h4>
+        <form action="/contact.html" method="get"> <!-- html form with 3 input fields and one submit button-->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br> 
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email"><br><br>
+            <label for="textarea">Message:</label>
+            <input type="text" id="textarea" name="textarea"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+    </section>
+
+    <!-- footer section-->
+    <footer>
+        <p>Don't be shy! Send me a message with your needs and I'll certanly help you.</p>
+    </footer>
+    <audio autoplay> <!-- audio content-->
+        <source src="assets/matrix.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+      </audio>
+</body>
+</html>
